@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Medical Aid Nonprofit</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/members.html" class="nav-link">Members</a></li>
+                    <li><a href="/sponsors.html" class="nav-link">Sponsors</a></li>
+                    <li><a href="/events.html" class="nav-link">Events</a></li>
+                    <li><a href="/donate.html" class="nav-link">Donate</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="donate-section">
+                <h1 class="section-title">Support Our Mission</h1>
+                <p class="section-subtitle">Your donation helps us continue our work in the community.</p>
+
+                <!-- Donation Type Tabs -->
+                <div class="tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-button active" data-tab="one-time">One-time Donation</button>
+                        <button class="tab-button" data-tab="monthly">Monthly Donation</button>
+                    </div>
+
+                    <!-- One-time Donation Tab -->
+                    <div class="tab-content active" id="one-time">
+                        <div class="donation-amounts">
+                            <label class="amount-option">
+                                <input type="radio" name="amount" value="25">
+                                <span>$25</span>
+                            </label>
+                            <label class="amount-option">
+                                <input type="radio" name="amount" value="50" checked>
+                                <span>$50</span>
+                            </label>
+                            <label class="amount-option">
+                                <input type="radio" name="amount" value="100">
+                                <span>$100</span>
+                            </label>
+                            <label class="amount-option">
+                                <input type="radio" name="amount" value="custom">
+                                <span>Custom</span>
+                            </label>
+                        </div>
+                        <div class="custom-amount" style="display: none;">
+                            <input type="number" placeholder="Enter amount" min="1" step="1">
+                        </div>
+                    </div>
+
+                    <!-- Monthly Donation Tab -->
+                    <div class="tab-content" id="monthly">
+                        <div class="subscription-options">
+                            <div class="subscription-card">
+                                <h3>Monthly Supporter</h3>
+                                <p class="price">$10<span>/month</span></p>
+                                <p>Support our mission with a monthly contribution</p>
+                                <button class="button button-primary">Select</button>
+                            </div>
+                            <div class="subscription-card">
+                                <h3>Annual Champion</h3>
+                                <p class="price">$100<span>/year</span></p>
+                                <p>Make a bigger impact with yearly support</p>
+                                <button class="button button-primary">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Security Notice -->
+                <div class="security-notice">
+                    <i class="fas fa-lock"></i>
+                    <p>Secure payment processing. Your information is encrypted and never stored.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Medical Aid Nonprofit. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/donate.js"></script>
+</body>
+</html>
